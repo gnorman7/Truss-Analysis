@@ -1,0 +1,26 @@
+# Truss Input File
+#
+# Number of joints, bar, reactions, and external loads
+3  3  6  1
+#
+# Magnet joints and their coordinates
+001     0.000     0.000     0.000
+002     0.000     2.000     0.000
+003     2.000     0.000     0.000
+#
+# Rigid rods and their associated joints
+001  001  002
+002  002  003
+003  003  001
+#
+# Reaction Forces
+001    1.000     0.000     0.000
+001    0.000     1.000     0.000
+003    0.000     1.000     0.000
+001    0.000     0.000     1.000
+003    0.000     0.000     1.000
+002    0.000     0.000     1.000
+#
+# External Loads
+002    500.0     0.000     0.000
+# End.
